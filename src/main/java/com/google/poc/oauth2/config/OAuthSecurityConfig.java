@@ -55,7 +55,7 @@ public class OAuthSecurityConfig extends WebSecurityConfigurerAdapter {
 	 * @return OAuth2ClientAuthenticationProcessingFilter
 	 */
 	private OAuth2ClientAuthenticationProcessingFilter filter() {
-		// Creating the filter for "/sumit/login" url
+		// Creating the filter for "/googleOAuth/login" url
 		OAuth2ClientAuthenticationProcessingFilter oAuth2Filter = new OAuth2ClientAuthenticationProcessingFilter("/googleOAuth/login");
 		// Creating the rest template for getting connected with OAuth service.
 		// The configuration parameters will inject while creating the bean.
